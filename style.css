@@ -28,7 +28,8 @@ html {
   width: 21rem;
   height: 100%;
   border-radius: 1rem;
-  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .card__img {
@@ -63,6 +64,8 @@ html {
 
 .card__stats {
   margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .card__stats h2 {
@@ -77,4 +80,43 @@ html {
   font-size: 0.72rem;
   color: var(--more-transparent-white);
   letter-spacing: 0.12rem;
+}
+
+@media (min-width: 1024px) {
+  .card {
+    margin: 5rem auto;
+    width: 80%;
+    height: 100%;
+    border-radius: 1rem;
+    flex-direction: row-reverse;
+    text-align: left;
+  }
+
+  .card__img {
+    background-size: cover;
+    width: 100%;
+    border-radius: 0 1rem 1rem 0;
+    height: 450px;
+  }
+
+  .card__content {
+    padding: 4.55rem;
+  }
+
+  .card__title {
+    margin-top: 0;
+    font-size: 2.25rem;
+    padding-right: 5.5rem;
+  }
+
+  .card__text {
+    padding-right: 7rem;
+  }
+
+  .card__stats {
+    margin-top: 2.7rem;
+    padding-right: 7rem;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
