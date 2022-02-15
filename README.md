@@ -25,11 +25,11 @@ Users should be able to:
 
 #### Desktop
 
-![](./screenshot-desktop.jpg)
+![](./screenshot-desktop.png)
 
 #### Mobile
 
-![](./screenshot-desktop.jpg)
+![](./screenshot-mobile.png)
 
 ## My process
 
